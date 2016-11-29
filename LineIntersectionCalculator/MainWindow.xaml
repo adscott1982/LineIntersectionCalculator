@@ -1,0 +1,38 @@
+﻿<Window x:Class="LineIntersectionCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LineIntersectionCalculator"
+        mc:Ignorable="d"
+        Title="Line Intersection Calculator" Height="252.86" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Margin="5" >Line 1 Start</Label>
+        <TextBox Name="Line1StartX" Margin="5" Grid.Row="0" Grid.Column="1" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <TextBox Name="Line1StartY" Margin="5" Grid.Row="0" Grid.Column="2" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <Label Grid.Row="1" Margin="5">Line 1 End</Label>
+        <TextBox Name="Line1EndX" Margin="5" Grid.Row="1" Grid.Column="1" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <TextBox Name="Line1EndY" Margin="5" Grid.Row="1" Grid.Column="2" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <Label Grid.Row="2" Margin="5">Line 2 Start</Label>
+        <TextBox Name="Line2StartX" Margin="5" Grid.Row="2" Grid.Column="1" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <TextBox Name="Line2StartY" Margin="5" Grid.Row="2" Grid.Column="2" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <Label Grid.Row="3" Margin="5">Line 2 End</Label>
+        <TextBox Name="Line2EndX" Margin="5" Grid.Row="3" Grid.Column="1" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <TextBox Name="Line2EndY" Margin="5" Grid.Row="3" Grid.Column="2" PreviewTextInput="TextBoxCheckIsNumber"/>
+        <Button Grid.Row="4" Margin="5" Click="Calculate">Calculate</Button>
+        <Label Margin="5" Name="ResultX" Grid.Row="4" Grid.Column="1">X = </Label>
+        <Label Margin="5" Name="ResultY" Grid.Row="4" Grid.Column="2">Y =</Label>
+    </Grid>
+</Window>
